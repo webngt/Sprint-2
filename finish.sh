@@ -2,5 +2,5 @@
 
 msg=$(mvn test)
 
-jq -M -c -n --arg out "$msg" '{$out}'
+jq -M -c -n --arg mvn_out "$msg" '{$mvn_out}'
 
